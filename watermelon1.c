@@ -15,6 +15,6 @@ if(x>=1 && x<=100){
     }
 
  return 0;
-
+//1st problem done
 
  }
