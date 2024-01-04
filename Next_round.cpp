@@ -1,27 +1,23 @@
-
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
+int n,k,i,count=0,a[99999];
 
-int n,i,x=0;
-
- string s;
-
- cin>> n;
+cin >>n;
+cin >>k;
 
  for(i=0;i<n;i++){
-    cin>> s;
+    cin >>a[i];}
 
-    if( s=="X++" || s=="++X"){
-        x++;
-    }
-    else {
-        x--;
+     for(i=0;i<n;i++){
+    if(a[i]>=a[k-1] && a[i]>0){
+
+        count++;
     }
  }
-cout<< x<< endl;
 
+cout<< count <<endl;
+
+return 0;
 }
-
